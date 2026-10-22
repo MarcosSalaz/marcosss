@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti 💙</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #050510;
+        color: white;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: clamp(25px, 7vw, 40px);
+        color: #4169E1;
+        text-align: center;
+    }
+
+    svg {
+        width: min(80vw, 350px);
+        overflow: visible;
+    }
+
+    .linea {
+        fill: none;
+        stroke: #000080;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        filter: drop-shadow(0 0 8px #000080);
+        animation: dibujar 3s ease forwards;
+    }
+
+    .relleno {
+        fill: #000080;
+        opacity: 0;
+        animation: aparecer 1s ease forwards;
+        animation-delay: 3s;
+    }
+
+    .latido {
+        transform-origin: center;
+        animation: latir 1s infinite;
+        animation-delay: 4s;
+    }
+
+    p {
+        color: #8FAAFF;
+        font-size: clamp(18px, 5vw, 24px);
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    @keyframes dibujar {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes aparecer {
+        to {
+            opacity: 0.85;
+        }
+    }
+
+    @keyframes latir {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<h1>I LOVE YOU 💙</h1>
+
+<div class="latido">
+    <svg viewBox="0 0 200 180" aria-label="Corazón azul marino">
+        <path class="relleno"
+            d="M100 165
+               C85 145 15 105 15 55
+               C15 10 70 5 100 45
+               C130 5 185 10 185 55
+               C185 105 115 145 100 165 Z"/>
+
+        <path class="linea"
+            d="M100 165
+               C85 145 15 105 15 55
+               C15 10 70 5 100 45
+               C130 5 185 10 185 55
+               C185 105 115 145 100 165 Z"/>
+    </svg>
+</div>
+
+<p>Se que no es lo mejor pero lo hice con Amor y para Ti💙</p>
+```
+
+</body>
+</html>
